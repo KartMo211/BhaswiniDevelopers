@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/navbar.js"></script>
+        <link rel="stylesheet" type="text/css" href="Stylesheet/style.css">
+        <link rel="stylesheet" type="text/css" href="Stylesheet/home.css">
+        <link rel="stylesheet" type="text/css" href="Stylesheet/project.css">
+        <link href="Stylesheet/footer.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="Stylesheet/form.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="Stylesheet/footer.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        .menubar{
+            top:0px;
+        }
+        
+    .footer{
+        background-image:none;
+    }
+    .footertext{
+        color:black
+    }
+    .footercolumn .header{
+        color:black;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="menubar" align="center" id="nav">
+            <ul>
+                <li><img src="Images/logo.png" class="logo"></li>
+                <li><button class="nodisplay" onclick="display()">&#9776</button></li>
+                <li class="display" id="display3"><a href="index.html">Home</a></li>
+                <li class="display" id="display"><a href="#footer">About Us</a></li>
+                <li class="display" id="display2"><a href="services.html">Our Services</a></li>
+                <li class="display" id="display1"><div class="toggle"><a style="cursor:default" href="project.html">Our Projects</a><div class="dropdown"><a href="bhaswiniarcade.html">Bhaswini arcade</a><a href="brindavanam..html">Brindavanam</a><a href="sukruthinivas.html">Sukruthinivas</a><a href="manashwini.html">Manashwini</a></div></div></li>
+            </ul>
+        </div>
+        <form action="form.php" target="_blank">
+            <button class="formbutton" id="formbutton"><i class="far fa-envelope"></i></button>
+        </form>
+        <div class="namesApartments" style="margin-top:115px;" align="center">
+            <div class="columnApartments">
+                <div class="section">
+                    <a href="brindavanam.html"><img src="Images/brindavanam/image1.jpeg"></a>
+                    <a href="brindavanam.html"><h1 class="textApartments">Brindavanam</h1></a>
+                </div>
+                <div class="section1">
+                    <a href="manashwini.html"><img src="Images/manashwini/WhatsApp Image 2019-06-30 at 6.28.40 PM.jpeg"></a>
+                    <a href="manashwini.html"><h1 class="textApartments1">Manashwini</h1></a>
+                </div>
+            </div>
+            <div class="columnApartments">
+                <div class="section2">
+                    <a href="bhaswiniarcade.html"><img src="Images/manashwini/WhatsApp Image 2019-06-30 at 6.28.40 PM.jpeg"></a>
+                    <a href="bhaswiniarcade.html"><h1 class="textApartments2">Bhaswini Arcade</h1></a>
+                </div>
+                <div class="section3">
+                    <a href="sukruthinivas.html"><img src="Images/sukruthinivas/WhatsApp Image 2019-06-30 at 6.28.40 PM.jpeg"></a>
+                    <a href="sukruthinivas.html"><h1 class="textApartments3">Sukruthinivas</h1></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer" align="center" id="footer" style="display:block;">
+            <div class="footercolumn" align="center" id="footercolumn2">
+                <img src="Images/logo.png" class="footerlogo">
+                <span class="footertext" style="margin-left:5px; margin-right:5px;">Bhaswini Developers is a growing Real Estate Development Company in Hyderabad.</span>
+            </div>
+            <div class="footercolumn" id="footercolumn">
+                <span class="header">Address</span>
+                <hr />
+                <span class="footertext">Plot No: #23, 3<sup>rd</sup> floor<br>Praneeth Pranav Valley,<br>Bachupally,<br>Hyderabad-502325</span>
+            </div>
+            <div class="footercolumn" id="footercolumn1">
+                <span class="header">Social Links</span>
+                <hr />
+                <span class="footertext"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-google"></a></span>
+            </div>
+        </div>
+    </body>
+</html>

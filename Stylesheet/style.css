@@ -1,0 +1,315 @@
+html{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.mySlides { display:none ; 
+    transition:all 2s;
+    width:75%;
+}
+.fade{
+    animation-name:fade;
+    animation-duration:1s;
+}
+@keyframes fade{
+    0%{
+        opacity:0.4;
+    }
+    100%{
+        opacity:1;
+    }
+}
+/* Good color: #a5f2f3 */
+
+/* CSS for loader */
+
+#loader-wrapper {
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 100% ;
+    z-index: 1000 ; }
+
+html{
+    height:100%;
+    margin:0;
+}
+
+.parallax {
+    background-image: url('../Images/parallax.jpg') ;
+    height: 50% ;
+    background-attachment: fixed ;
+    background-position: center ;
+    background-repeat: no-repeat ;
+    background-size:cover;
+}
+
+#loader {
+    display: block ;
+    position: relative ;
+    left: 50% ;
+    top: 50% ;
+    width: 150px ;
+    height: 150px ;
+    margin: -75px 0 0 -75px ;
+    border-radius: 50% ;
+    border: 3px solid transparent ;
+    border-top-color: #3498db ;
+    
+    -webkit-animation: spin 2s linear infinite ;
+    animation: spin 2s linear infinite ;
+    
+    z-index: 1001 ;
+}
+
+#loader:before {
+    content: "" ;
+    position: absolute ;
+    top: 5px ;
+    left: 5px ;
+    right: 5px ;
+    bottom: 5px;
+    border-radius: 50% ;
+    border: 3px solid transparent ;
+    border-top-color: #e74c3c ;
+    
+    -webkit-animation: spin 3s linear infinite ;
+    animation: spin 3s linear infinite ;
+}
+
+#loader:after {
+    content: "" ;
+    position: absolute ;
+    top: 15px ;
+    left: 15px ;
+    right: 15px ;
+    bottom: 15px ;
+    border-radius: 50% ;
+    border: 3px solid transparent ;
+    border-top-color: #f9c922 ;
+    
+    -webkit-animation: spin 1.5s linear infinite ;
+    animation: spin 1.5s linear infinite ;
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg) ;
+        -ms-transform: rotate(0deg) ;
+        transform: rotate(0deg) ; }
+    100% {
+        -webkit-transform: rotate(360deg) ;
+        -ms-transform: rotate(360deg) ;
+        transform: rotate(360deg) ; }
+}
+
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg) ;
+        -ms-transform: rotate(0deg) ;
+        transform: rotate(0deg) ; }
+    100% {
+        -webkit-transform: rotate(360deg) ;
+        -ms-transform: rotate(360deg) ;
+        transform: rotate(360deg) ; }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed ;
+    top: 0 ;
+    width: 51% ;
+    height: 100% ;
+    background: #222222 ;
+    z-index: 1000 ;
+    -webkit-transform: translateX(0) ;
+    -ms-transform: translateX(0) ;
+    transform: translateX(0) ;
+}
+
+#loader-wrapper .loader-section.section-left { left: 0 ; }
+#loader-wrapper .loader-section.section-right { right: 0 ; }
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%) ;
+    -ms-transform: translateX(-100%) ;
+    transform: translateX(-100%) ;
+    
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%) ;
+    -ms-transform: translateX(100%) ;
+    transform: translateX(100%) ;
+    
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    
+    -webkit-transform: translateY(-100%) ;
+    -ms-transform: translateY(-100%) ;
+    transform: translateY(-100%) ;
+    
+    -webkit-transition: all 0.3s 1s ease-out ;
+    transition: all 0.3s 1s ease-out ;
+}
+
+.no-js #loader-wrapper { display: none ; }
+.no-js h1 { color: #222 ; }
+
+/* CSS for loader ENDS */
+
+
+.clearfix:after {
+    content: "" ;
+    display: table ;
+    clear: both ; }
+
+.info1 {
+    text-align: justify ;
+    padding-top: 5% ;
+    padding-bottom:5%;
+    padding-right:10%;
+    padding-left:10%;
+    line-height: 2 ;
+    font-family: Helvetica, monospace ;
+}
+
+.this img { width: 100%; padding: 5% ; }
+
+body { margin: 0px ; padding: 0px ; height: 100% ;}
+
+.center {
+    position: absolute ;
+    top: 50% ;
+    right: 50% ;
+    transform: translate(50%,-50%) ;
+    font-size: 3.5vw ;
+    font-family: monospace ;
+    font-weight: bold ;
+    border: double 2px white ;
+    padding: 1% ;
+    background-color: white ;
+    width:75%;
+}
+#appearing{
+    animation:appearing 7s 1;
+    position:relative;
+    text-transform:uppercase;
+    display:block;
+    color:#83adef;
+}
+@keyframes appearing{
+    0%{
+        color:#fff;
+        font-size:3em;
+    }
+    50%{
+        color:#83adef;
+        font-size:2em;
+    }
+}
+
+h2.in, p.in {
+    text-align: center ;
+    font-family: sans-serif ;
+    font-size: 1vw ;
+    letter-spacing: 0.15em ;
+ }
+
+h2.in { color: #ADD8e6 ; font-size: 1.5vw ; font-weight: bold ; }
+
+.icon {
+    position: fixed ;
+    top: 60% ;
+    width: 5% ;
+    -webkit-transform: translateY(-40%) ;
+    -ms-transform: translateY(-40%) ;
+    transform: translateY(-40%) ; 
+}
+
+.icon a {
+    display: block ;
+    text-align: center ;
+    padding: 16px ;
+    transition: all 0.3s ease ;
+    color: white ;
+    font-size: 1.5vw ; 
+    transition:all 0.5s;
+}
+
+.icon a:hover {
+    background-color: #000 ;
+    padding-right:25px;
+}
+
+.facebook {
+    background: #3B5998 ;
+    color: white ; }
+
+.twitter {
+    background: #55ACEE ;
+    color: white ; }
+
+.google {
+    background: #dd4b39 ;
+    color: white ; }
+
+.linkedin {
+    background: #007bb5 ;
+    color: white ; }
+
+.youtube {
+    background: #bb0000 ;
+    color: white ; }
+
+.box {
+    width: 100% ;
+    background-color: #ddd ; }
+
+.skills {
+    text-align: right ;
+    padding: 10px ;
+    color: white ; 
+    width:100%;
+    transition:all 1s;
+}
+
+.customer { width: 0% ; background-color: #4CAF50 ; transition:all 2s; }
+.quality { width: 0% ; background-color: #2196F3 ; transition:all 2.5s; }
+.cost { width: 0% ; background-color: #f44336 ; transition: all 3s;}
+.locality { width: 0% ; background-color: #808080 ; transition: all 3.5s;}
+
+.stats1 { margin-right: 20% ; margin-left: 20% ; margin-bottom: 15% ; }
+@media screen and (max-width:1200px){
+    .customer{
+        width:90%;
+    }
+    .quality{
+        width:80%;
+    }
+    .cost{
+        width:65%;
+    }
+    .locality{
+        width:60%;
+    }
+}

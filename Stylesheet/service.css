@@ -1,0 +1,238 @@
+body{
+    height:100%;
+    width:100%;
+    font-family:sans-serif;
+    padding:0;
+    margin:0;
+}
+.buildName{
+    text-align:center;
+    border:10px solid white;
+}
+.buildName h1.buildNameText{
+    text-transform:uppercase;
+    font-size:150px;
+    letter-spacing:8px;
+    background-image:url('../Images/textimage.jpg');
+    background-size:cover;
+    background-position:center;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    background-attachment:fixed;
+    animation:buildNameText 3s 1;
+    padding:10px;
+}
+.buildDescrip{
+    width:90%;
+    text-align:center;
+    margin-top:5%;
+    background-color:#636e72;
+    border-radius:20px;
+}
+.buildDescrip h1.buildDescripHead{
+    text-transform:uppercase;
+    font-size:70px;
+    letter-spacing:5px;
+    background-image:url('../Images/textimage2.jpg');
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    padding-top:5%;
+}
+
+@keyframes buildNameText{
+    0%{
+        opacity:0;
+    }
+    5%{
+        opacity:0;
+    }
+    70%{
+        opacity:1;
+    }
+}
+.buildScrollDown{
+    text-align:center;
+}
+.buildScrollDown h1.buildScrollDownText{
+    letter-spacing:7px;
+    font-size:1.5em;
+    color:#0c2461;
+    animation:buildScrollDownText 3s 1;
+}
+.buildDescrip h1.buildDescripText{
+    color:#dfe6e9;
+    text-align:justify;
+    padding:5%;
+    padding-top:0%;
+    font-size:25px;
+}
+* {
+    -sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+.buildColumn .mySlides {
+    display: none;
+}
+.buildColumn img {
+    vertical-align: middle;
+}
+
+.buildColumn .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.buildColumn .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.buildColumn .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.buildColumn .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.buildColumn .active {
+  background-color: #717171;
+}
+
+.buildColumn .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes buildScrollDownText{
+    0%{
+        opacity:0;
+    }
+    70%{
+        opacity:0;
+    }
+    80%{
+        opacity:1;
+    }
+}
+.buildRow div.buildColumn{
+    width:40%;
+    display:inline-block;
+    padding:5%;
+}
+.buildColumn span{
+    text-transform:uppercase;
+    font-family:sans-serif;
+    font-weight:none;
+}
+.buildColumn h1.title{
+    font-family:Cursive,sans-serif;
+    font-style:oblique;
+    font-weight:bolder;
+}
+.buildColumn h1.details{
+    text-align:justify;
+    font-size:1.5em;
+}
+#style{
+    float:right;
+    background-color:#0097e6;
+    color:white;
+    border-radius:20px 0 0 20px;
+}
+
+@media screen and (max-width:1000px){
+    .buildName h1.buildNameText{
+        font-size:80px;
+    }
+    .buildDescrip h1.buildDescripHead{
+        font-size:50px;
+    }
+}
+@media screen and (max-width:800px){
+    .buildRow div.buildColumn{
+        float:none;
+        width:70%;
+    }
+}
+.buildSkillbar{
+    width:75%;
+}
+.buildSkill{
+    padding:1px;
+    width:100%;
+    background-color:#ddd;
+    border-radius:20px;
+}
+.arcade{
+    font-size:1.5em;
+    font-family:Verdana,Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    padding-top:2%;
+}
+.arcadeCustomer{
+    width:90%;
+    text-align:right;
+    background-color:#70a1ff;
+    border-radius:20px;
+    color:white;
+    padding:5px;
+}
+.arcadeQuality{
+    width:75%;
+    text-align:right;
+    background-color:#1e90ff;
+    border-radius:20px;
+    color:white;
+    padding:5px;
+}
+.arcadePrice{
+    width:85%;
+    text-align:right;
+    background-color:#5352ed;
+    border-radius:20px;
+    color:white;
+    padding:5px;
+}
+.arcadeLocality{
+    width:65%;
+    text-align:right;
+    background-color:#3742fa;
+    border-radius:20px;
+    color:white;
+    padding:5px;
+}

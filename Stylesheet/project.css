@@ -1,0 +1,128 @@
+html{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.namesApartments{
+    padding:10px;
+}
+.columnApartments{
+    width:50%;
+    float:left;
+    padding:5px;
+}
+.columnApartments img{
+    width:100%;
+    padding:15px;
+    filter:grayscale(100%);
+    transition: all 1s;
+}
+.section{
+    margin-bottom:70px;
+}
+.section:hover img{
+    filter:grayscale(0%);
+}
+.section:hover .textApartments{
+    margin-top:5px;
+}
+a{
+    text-decoration:none;
+}
+.textApartments{
+    font-size:2.5em;
+    font-family:"Snell Roundhand", cursive;
+    font-weight:bold;
+    font-style:oblique;
+    margin-top:-100px;
+    transition:all 1s;
+}
+/*this is 1*/
+.section1:hover img{
+    filter:grayscale(0%);
+}
+.section1:hover .textApartments1{
+    margin-top:5px;
+}
+.textApartments1{
+    font-size:2.5em;
+    font-family:"Snell Roundhand", cursive;
+    font-weight:bold;
+    font-style:oblique;
+    margin-top:-100px;
+    transition:all 1s;
+}
+/*this is 2*/
+.section2{
+    margin-bottom:70px;
+}
+.section2:hover img{
+    filter:grayscale(0%);
+}
+.section2:hover .textApartments2{
+    margin-top:5px;
+}
+.textApartments2{
+    font-size:2.5em;
+    font-family:"Snell Roundhand", cursive;
+    font-weight:bold;
+    font-style:oblique;
+    margin-top:-100px;
+    transition:all 1s;
+}
+/*this is 3*/
+.section3:hover img{
+    filter:grayscale(0%);
+}
+.section3:hover .textApartments3{
+    margin-top:5px;
+}
+.textApartments3{
+    font-size:2.5em;
+    font-family:"Snell Roundhand", cursive;
+    font-weight:bold;
+    font-style:oblique;
+    margin-top:-100px;
+    transition:all 1s;
+}
+/*this is 3*/
+@media only screen and (max-width:750px) and (orientation:portrait){
+    .columnApartments{
+        width:100%;
+    }
+}
+@media only screen and (max-width:750px){
+    .columnApartments img{
+        filter:grayscale(0%);
+    }
+    .textApartments{
+        font-size:2em;
+        margin-top:0;
+    }
+    .section{
+        margin-bottom:0;
+    }
+    .textApartments1{
+        font-size:2em;
+        margin-top:0;
+    }
+    .textApartments2{
+        font-size:2em;
+        margin-top:0;
+    }
+    .section2{
+        margin-bottom:0;
+    }
+    .textApartments3{
+        font-size:2em;
+        margin-top:0;
+    }
+}

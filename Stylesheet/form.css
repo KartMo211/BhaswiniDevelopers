@@ -1,0 +1,86 @@
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.formbutton{
+    top:50%;
+    transform:translate(0,-50%);
+    right:0;
+    width:75px;
+    height:50px;
+    font-size:2em;
+    position:fixed;
+    background-color:white;
+    border: 2px solid darkcyan;
+    transition:all 0.5s;
+    color:black;
+    z-index:10;
+    opacity:0;
+}
+.formbutton:hover{
+    background-color:darkcyan;
+    color:white;
+}
+.formfill {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top:60%;
+    left: 50%;
+    width:300px;
+    padding:40px;
+    background: #00b894;
+    text-align:center;
+}
+.formfill input[type=text]{
+    border:0;
+    background:none;
+    display:block;
+    border:5px solid #0984e3;
+    padding:10px;
+    margin:10px auto;
+    border-radius:24px;
+    text-align:center;
+    font-weight:bolder;
+    transition:0.5s;
+    outline:none;
+    color:white;
+    width:200px;
+}
+.formfill input[type=submit]{
+    background:none;
+    border:5px solid #0be881;
+    padding:10px 15px;
+    margin-top:10px;
+    border-radius:24px;
+    font-weight:bolder;
+    transition:0.5s;
+    outline:none;
+    color:white;
+}
+.formfill input[type=text]:focus{
+    width:250px;
+    border-color:#0be881;
+}
+.formfill input[type=submit]:hover{
+    background-color:#0be881;
+    color:white;
+}
+.formfill h1{
+    text-transform:uppercase;
+    font-size:1em;
+    color:white;
+}
+.logoparallax{
+    background-image:url("../Images/logo.png");
+    background-position:center;
+    background-size:cover;
+    height:90%;
+    filter:blur(8px);
+    -webkit-filter:blur(8px);
+}

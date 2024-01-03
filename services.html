@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Services</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="js/navbar.js"></script>
+    <link href="Stylesheet/home.css" type="text/css" rel="stylesheet">
+    <link href="Stylesheet/services.css" type="text/css" rel="stylesheet">
+    <link href="Stylesheet/style.css" type="text/css" rel="stylesheet">
+    <link href="Stylesheet/form.css" type="text/css" rel="stylesheet">
+    <link href="Stylesheet/servicestext.css" type="text/css" rel="stylesheet">
+    <link href="Stylesheet/footer.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <form action="form.php" target="_blank">
+        <button class="formbutton" style="z-index:10;" id="formbutton"><i class="far fa-envelope"></i></button>
+    </form>
+    <div class="serviceimage" id="background"></div>
+    <div class="menubar" align="center" id="nav" style="top:0;">
+        <ul>
+            <li><img src="Images/logo.png" class="logo"></li>
+            <li><button class="nodisplay" onclick="display()">&#9776</button></li>
+            <li class="display" id="display3"><a href="index.html">Home</a></li>
+            <li class="display" id="display"><a href="#footer">About Us</a></li>
+            <li class="display" id="display2"><a href="services.html">Our Services</a></li>
+            <li class="display" id="display1"><div class="toggle"><a href="project.html">Our Projects</a><div class="dropdown"><a href="bhaswiniarcade.html">Bhaswini arcade</a><a href="brindavanam.html">Brindavanam</a><a href="sukruthinivas.html">Sukruthinivas</a><a href="manashwini.html">Manashwini</a></div></div></li>
+        </ul>
+    </div>
+    <div class="row" id="row" align="center">
+        <div class="column2">
+            <button class="builder" id="customers" onclick="show()">I am a customer</button>
+            <span class="servicetext"><sup>*</sup>You are someone who wants to purchase an apartment/a villa constructed by Bhaswini Developers</span>
+        </div>
+        <div class="column2" style="float:right;">
+            <button class="builder" onclick="show2()" id="builder">I am a builder</button>
+            <span class="servicetext"><sup>*</sup>You are someone who owns a land and wants to develop it.</span>
+        </div>
+    </div>
+
+    <div id="content" style="transition:all 1s;display:none;" align="center">
+        <!�� ALL THE CONTENT OVER HERE ��!>
+        <div class="center" align="center" style="top:none;position:relative;transform:none;left:0%;">
+            <span id="appearing" style="animation:none;position:relative;">Stunning apartments</span>
+            <span class="second" style="animation:none;position:relative;"> in bijou localities </span>
+        </div>
+        <div class="this">
+
+            <img class="mySlides fade" style="width:90%;" src="Images/image1.jpg" id="slides">
+            <img class="mySlides fade" style="width:90%;" src="Images/image2.jpg" id="slides1">
+        </div>
+
+        <p class="info1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim metus id ante mattis ultricies. Sed dictum ut nisi nec tempus. Suspendisse bibendum libero at ornare faucibus. Donec magna felis, sagittis et eros vitae, placerat imperdiet augue. Suspendisse fermentum sollicitudin turpis. Fusce feugiat, lorem ac pulvinar ornare, nisi urna ullamcorper sem, non blandit nisl erat vitae velit. Nulla porttitor ultrices massa vitae aliquet. Praesent hendrerit feugiat nisi ut suscipit. Donec in lorem in quam accumsan elementum. <br> <br>
+
+            Suspendisse facilisis turpis augue, et ultricies erat dignissim vel. Mauris in risus nec massa semper aliquet nec et augue. Integer nec urna eget dolor fringilla maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non odio id eros elementum hendrerit. Integer viverra nunc sed eros tempor suscipit. Sed pharetra nisi ut sem gravida lobortis. Nunc a quam at odio blandit varius. Phasellus lobortis nisi enim, eu iaculis ligula gravida eu. Vivamus sapien massa, sollicitudin accumsan sollicitudin non, congue in massa. Etiam scelerisque suscipit justo in tempor. Etiam euismod vehicula dapibus.
+
+            Integer vel euismod dolor. Cras in elit eu enim sodales euismod at sit amet augue. Curabitur porttitor rutrum odio. Mauris ut libero libero. In congue odio non magna pharetra, sit amet pulvinar augue convallis. In id maximus lacus, sit amet faucibus eros. Nam vel dui lacus. Ut ligula diam, consequat non felis a, aliquet luctus enim. Fusce luctus laoreet semper. Nunc id tempus urna, a feugiat elit. Integer ex velit, congue in congue aliquam, ultrices sed odio. Sed maximus et ante eu semper. Sed in metus et nisl semper aliquet. Integer sit amet nunc ligula. Aliquam erat volutpat.
+        </p>
+
+    </div>
+    <div class="builderrow" align="center" id="builderrow">
+        <div>
+            <div class="buildercolumn">
+                <img src="Images/villa.jpg" />
+                <h1 class="heading" id="villas">Villas</h1>
+                <h1 class="buildercontent" id="buildercontent">A villa was originally an ancient upper-class country house. Since its origins in the villa, the idea and function of a villa have evolved considerably.</h1>
+            </div>
+            <div class="buildercolumn">
+                <img src="Images/image.jpeg">
+                <h1 class="heading" id="hospitality">Hospitality</h1>
+                <h1 class="buildercontent" id="buildercontent2">Hospitality refers to the relationship between a guest and a host, wherein the host recieves the guest with goodwill, including the reception and entertainment of guest visitors and strangers.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="footer" align="center" id="footer">
+        <div class="footercolumn" align="center" id="footercolumn2">
+            <img src="Images/logo.png" class="footerlogo">
+            <span class="footertext" style="margin-left:5px; margin-right:5px;">Bhaswini Developers is a growing Real Estate Development Company in Hyderabad.</span>
+        </div>
+        <div class="footercolumn" id="footercolumn">
+            <span class="header">Address</span>
+            <hr />
+            <span class="footertext">Plot No: #23, 3<sup>rd</sup> floor<br>Praneeth Pranav Valley,<br>Bachupally,<br>Hyderabad-502325</span>
+        </div>
+        <div class="footercolumn" id="footercolumn1">
+            <span class="header">Social Links</span>
+            <hr />
+            <span class="footertext"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-google"></a></span>
+        </div>
+    </div>
+    <script>
+
+            var myIndex = 0 ;
+            carousel() ;
+
+            function carousel() {
+                var i ;
+                var x = document.getElementsByClassName("mySlides") ;
+                for (i = 0 ; i < x.length ; i++) {
+                    x[i].style.display = "none" ; }
+
+                myIndex++ ;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex-1].style.display = "block" ;
+                setTimeout(carousel, 2000) ; }
+
+    </script>
+    <script>
+    var background = document.getElementById('background');
+    var button = document.getElementById('customers');
+    var button2 = document.getElementById('builder');
+    var text = document.getElementById('content');
+    var text2 = document.getElementById('builderrow');
+    function show(){
+       button.className="after";
+       button2.className="builder1";
+       background.className="serviceimage2";
+       text.style.display = "block";
+       text2.style.display = "none";
+    }
+    function show2(){
+        button.className="builder1";
+        button2.className="after";
+        background.className="serviceimage2";
+        text.style.display = "none";
+        text2.style.display = "block";
+        document.getElementById('hospitality').style.animation = "buildertext 2s 1";
+        document.getElementById('villas').style.animation = "buildertext 2s 1";
+        document.getElementById('buildercontent').style.animation = "buildercontent 2.75s 1";
+        document.getElementById('buildercontent2').style.animation = "buildercontent 2.75s 1";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.buildSlideshow{
+    width:75%;
+    margin-top:10%;
+    overflow:hidden;
+}
+.buildNav{
+    position:relative;
+    display:flex;
+    left:30%;
+    width:75%;
+}
+.buildBar{
+    height:20px;
+    width:50px;
+    border:2px solid #0c2461;
+    margin-right:10px;
+    margin-bottom:10px;
+    transition:0.5s all;
+}
+.buildBar:hover{
+    background-color:#0c2461;
+}
+.buildSlides{
+    width:500%;
+    display:flex;
+}
+.buildSlide{
+    width:20%;
+    transition:all 1s;
+}
+.buildSlide img{
+    width:100%;
+}
+input[type="radio"]{
+    visibility:hidden;
+    position:absolute;
+}
+#build1:checked ~ .s1{
+    margin-left:0%;
+}
+#build2:checked ~ .s1{
+    margin-left:-20%; 
+}
+#build3:checked ~ .s1{
+    margin-left:-40%; 
+}
+#build4:checked ~ .s1{
+    margin-left:-60%; 
+}
+#build5:checked ~ .s1{
+    margin-left:-80%; 
+}
+@media screen and (max-width:1200px){
+    .buildNav{
+        left:15%;
+    }
+}
+@media screen and (max-width:800px){
+    .buildNav{
+        left:5%;
+    }
+}
+@media screen and (min-width:1200px){
+    .buildSlide img{
+        width:80%;
+    }
+}

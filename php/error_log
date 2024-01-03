@@ -1,0 +1,3 @@
+[21-Jun-2019 16:04:22 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/dfmjk6losl30/public_html/php/mail.inc.db.php on line 7
+[26-Jun-2019 08:22:51 UTC] PHP Warning:  mysqli_stmt_bind_param(): Number of variables doesn't match number of parameters in prepared statement in /home/dfmjk6losl30/public_html/php/mail.php on line 19
+[26-Jun-2019 08:22:51 UTC] PHP Warning:  mysqli_stmt_bind_param(): Number of variables doesn't match number of parameters in prepared statement in /home/dfmjk6losl30/public_html/php/mail.php on line 37

@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sukruthinivas</title>
+    <script src="js/vendor/One.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="Stylesheet/style.css">
+    <link rel="stylesheet" type="text/css" href="Stylesheet/home.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="Stylesheet/form.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Stylesheet/footer.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+    
+    <body>
+
+        <div id="loader-wrapper">
+
+            <div id="loader"> </div>
+
+            <div class="loader-section section-left"> </div>
+            <div class="loader-section section-right"> </div>
+
+        </div>
+        <div class="parallax"></div>
+        <form method="POST" action="form.php" target="_blank">
+            <button class="formbutton" style="opacity:1;" id="formbutton"><i class="far fa-envelope"></i></button>
+        </form>
+        <div class="menubar" align="center" id="nav" style="top:0;">
+            <ul>
+            <li><img src="Images/logo.png" class="logo"></li>
+            <li><button class="nodisplay" onclick="display()">&#9776</button></li>
+            <li class="display" id="display3"><a href="index.html">Home</a></li>
+            <li class="display" id="display"><a href="#footer">About Us</a></li>
+            <li class="display" id="display2"><a href="services.html">Our Services</a></li>
+            <li class="display" id="display1"><div class="toggle"><a href="project.html">Our Projects</a><div class="dropdown"><a href="bhaswiniarcade.html">Bhaswini arcade</a><a href="brindavanam.html">Brindavanam</a><a href="sukruthinivas.html">Sukruthinivas</a><a href="manashwini.html">Manashwini</a></div></div></li>
+        </ul>
+        </div>
+        <div id="content">
+            <!–– ALL THE CONTENT OVER HERE ––!>
+            <div class="this">
+
+                <img class="mySlides fade" src="Images/sukruthinivas/WhatsApp Image 2019-06-30 at 6.28.40 PM(1).jpeg" id="slides">
+            </div>
+
+            <div class="center" align="center">
+                <span id="appearing">Stunning apartments</span>
+                <span class="second"> Sukruthinivas </span>
+            </div>
+
+            <p class="info1">
+                bleh/bleh b;eh
+            </p>
+
+        </div>
+
+        <div class="icon">
+
+            <a href="#" class="facebook"> <i class="fa fa-facebook"> </i> </a>
+            <a href="#" class="twitter"> <i class="fa fa-twitter"> </i> </a>
+            <a href="#" class="google"> <i class="fa fa-google"> </i> </a>
+        </div>
+
+        <div class="stats1" id="stats1">
+
+            <p> Customer care </p>
+            <div class="box">
+                <div class="skills customer" id="customer"> 90% </div>
+            </div>
+
+            <p> Quality </p>
+            <div class="box">
+                <div class="skills quality" id="quality"> 80% </div>
+            </div>
+
+            <p> Price </p>
+            <div class="box">
+                <div class="skills cost" id="cost"> 65% </div>
+            </div>
+
+            <p> Locality </p>
+            <div class="box">
+                <div class="skills locality" id="locality"> 60% </div>
+            </div>
+        </div>
+        <div class="footer" align="center" id="footer">
+            <div class="footercolumn" align="center" id="footercolumn2">
+                <img src="Images/logo.png" class="footerlogo">
+                <span class="footertext" style="margin-left:5px; margin-right:5px;">Bhaswini Developers is a growing Real Estate Development Company in Hyderabad.</span>
+            </div>
+            <div class="footercolumn" id="footercolumn">
+                <span class="header">Address</span>
+                <hr />
+                <span class="footertext">Plot No: #23, 3<sup>rd</sup> floor<br>Praneeth Pranav Valley,<br>Bachupally,<br>Hyderabad-502325</span>
+            </div>
+            <div class="footercolumn" id="footercolumn1">
+                <span class="header">Social Links</span>
+                <hr />
+                <span class="footertext"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a><a href="#" class="fa fa-google"></a></span>
+            </div>
+        </div>
+        <script>
+
+            var myIndex = 0 ;
+            carousel() ;
+
+            function carousel() {
+                var i ;
+                var x = document.getElementsByClassName("mySlides") ;
+                for (i = 0 ; i < x.length ; i++) {
+                    x[i].style.display = "none" ; }
+
+                myIndex++ ;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex-1].style.display = "block" ;
+                setTimeout(carousel, 2000) ; }
+
+        </script>
+        <script>
+                    function buttonappear(){
+                        document.getElementById('formbutton').style.opacity="0";
+                        document.getElementById('formfill').style.opacity="1";
+                    }
+                    function formclose(){
+                        document.getElementById('formbutton').style.opacity="1";
+                        document.getElementById('formfill').style.opacity="0";
+                    }
+        </script>
+        <script>
+            $(document).ready(function(){
+                var div = $('#stats1');
+                var div1 = $('#customer');
+                var pos = div.position();
+                var div2 = $('#quality');
+                var div3 = $('#cost');
+                var div4 = $('#locality');
+                $(window).scroll(function(){
+                    var windowpos = $(window).scrollTop();
+                    if(windowpos >= (pos.top-200)){
+                        div1.width( 70 + "%");
+                        div2.width( 60 + "%");
+                        div3.width( 45 + "%");
+                        div4.width( 40 + "%");
+                    }
+                });
+            });
+        </script>
+        <script>
+                $(document).ready(function(){
+                    var slides = $("#slides");
+                    var slides1 = $("#slides1");
+                    var slidespos = slides.position();
+                    $(window).scroll(function(){
+                        var windowsposition = $(window).scrollTop();
+                        if(windowsposition >= (slidespos.top-400)){
+                            slides.addClass('appearance');
+                            slides1.addClass('appearance');
+                        }
+                    });
+                });
+        </script>
+        <script>
+                function display(){
+                var display = document.getElementById('display');
+                            if(display.className=="display"){
+                                display.className += "after";
+                            }
+                            else{
+                                display.className = "display";
+                            }
+                            var display = document.getElementById('display1');
+                            if(display.className=="display"){
+                                display.className += "after";
+                            }
+                            else{
+                                display.className = "display";
+                            }var display = document.getElementById('display2');
+                            if(display.className=="display"){
+                                display.className += "after";
+                            }
+                            else{
+                                display.className = "display";
+                            }
+                        }
+        </script>
+    </body>
+    
+</html>
